@@ -1,6 +1,16 @@
 // http://jsfiddle.net/WRgjv/655/
 
+var pad = String(window.innerHeight/2 - (document.getElementById("statement").offsetHeight/2))+"px";
+document.getElementById("statement").style.paddingTop = pad;
+document.getElementById("statement").style.paddingBottom = pad;
 
+pad = String(window.innerHeight/2 - (document.getElementById("about").offsetHeight/2))+"px";
+document.getElementById("about").style.paddingTop = pad;
+document.getElementById("about").style.paddingBottom = pad;
+
+pad = String(window.innerHeight/2 - (document.getElementById("contact").offsetHeight/2))+"px";
+document.getElementById("contact").style.paddingTop = pad;
+document.getElementById("contact").style.paddingBottom = pad;
 
 paintings = [ 
   {

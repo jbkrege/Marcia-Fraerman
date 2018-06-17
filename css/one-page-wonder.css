@@ -90,19 +90,42 @@ header.masthead .masthead-content .masthead-subheading {
   }
 }
 
-h2.heading{
-  margin-left: 10px;
-  margin-top: 10px;
+#statement{
+  background-color: #ddd;
+  margin: 0;
+  padding-right: 100px;
 }
+
+#about{
+  margin: 0;
+  background-color: #ccc;
+}
+
+#contact{
+  margin: 0;
+  background-color: #222;
+  color: white;
+}
+
+h2.heading{
+  margin-left: 30px;
+  /*padding-top: 20%;*/
+}
+
 h3.subheading{
   margin-top: 10px;
   margin-left: 30px;
   font-size: 1.5rem;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, grey, white) 30;
 }
 
 p.statement{
-  margin-left: 40px;
-  margin-right: 40px;
+  /*margin-top: 40%;*/
+  /*padding-bottom: 20%;*/
+  padding-left: 40px;
+  padding-right: 40px;
   text-justify: inter-word;
   text-align: justify;
 }
@@ -186,8 +209,14 @@ table{
   margin-left: 30px;
 }
 
+tr{
+  display: flex;
+  align-items: left;
+}
+
 td{
   padding: 10px;
+  padding-top: 0;
   padding-left:0;
 }
 
