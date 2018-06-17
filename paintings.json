@@ -1,27 +1,18 @@
 [ 
   {
+    "name": "Square One II",
+    "img":  "./img/squareOneII.jpg",
+    "year": "2018",
+    "medium": "Acrylic paint on canvas",
+    "size": "40 x 40 inches"
+  },
+  {
     "name": "Red Square",
     "img": "./img/redSquare.jpg",
     "year": "2018",
     "medium": "Acrylic paint on canvas",
     "size": "20 x 20 inches"
   },
-
-  {
-    "name": "Square One II",
-    "img":  "./img/squareOneII.jpg",
-    "year": "2018",
-    "medium": "Acrylic paint on canvas",
-    "size": "40 x 40 inches"
-  }
-
-  {
-    "name": "Get Happy",
-    "img": "./img/getHappy.jpg",
-    "year": "2018",
-    "medium": "Acrylic paint on canvas",
-    "size": "24 x 36 inches"
-  }, 
   {
     "name": "Square Dance",
     "img": "./img/squareDance.jpg",
@@ -91,5 +82,14 @@
     "year": "2008",
     "medium": "Acrylic paint on canvas",
     "size": "20 x 20 inches"
-  }
+  },
+
+// Just Because
+  {
+    "name": "Get Happy",
+    "img": "./img/getHappy.jpg",
+    "year": "2018",
+    "medium": "Acrylic paint on canvas",
+    "size": "24 x 36 inches"
+  }, 
 ]
