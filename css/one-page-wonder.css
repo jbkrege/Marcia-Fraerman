@@ -107,6 +107,14 @@ img.painting {
   justify-content: space-between;
 }
 
+p.i {
+    font-style: italic;
+}
+
+td{
+  padding: 10px;
+}
+
 .bg-primary {
   background-color: #ee0979 !important;
 }
