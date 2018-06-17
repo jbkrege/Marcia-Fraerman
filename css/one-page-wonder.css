@@ -116,7 +116,7 @@ img.painting {
   justify-content: space-between;
 }
 
-@media (min-width:  992px){
+@media (max-width:  768px){
   .desc{
     font-size: 10px;
   }
