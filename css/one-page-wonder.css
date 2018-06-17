@@ -110,10 +110,16 @@ img.painting {
 
 .desc{
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center !important;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width:  992px){
+  .desc{
+    font-size: 10px;
+  }
 }
 
 p.i {
