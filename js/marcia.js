@@ -101,14 +101,14 @@ paintings = [
 
 var myPhoto = ["./img/redSquare.jpg","./img/squareOneII.jpg"];
 
-var container = document.getElementById("table_container");
+var container = document.getElementById("paintings_container");
 
 var table = document.createElement("table");
-document.getElementById("table_container").appendChild(table);
+document.getElementById("paintings_container").appendChild(table);
 
 for (var i=0, len = paintings.length; i < len; ++i) {
     var painting = document.createElement("div");
-    painting.className = "container";
+    painting.className = "frame";
 
     var photo = document.createElement("div");
     img = new Image();
@@ -128,21 +128,13 @@ for (var i=0, len = paintings.length; i < len; ++i) {
     title.appendChild(text);
     desc.appendChild(title);
 
-    var year = document.createElement("div");
-    year.innerHTML = paintings[i]["year"];
-    desc.appendChild(year);
-
-    var medium = document.createElement("div");
-    medium.innerHTML = paintings[i]["medium"];
-    desc.appendChild(medium);
-
-    var size = document.createElement("div");
-    size.innerHTML = paintings[i]["size"];
-    desc.appendChild(size);
+    var rest = document.createElement("div");
+    rest.innerHTML = ", "+paintings[i]["year"]+", "+paintings[i]["medium"]+", "+paintings[i]["size"];
+    desc.appendChild(rest);
 
     painting.appendChild(desc);
 
-    document.getElementById("table_container").appendChild(painting);
+    document.getElementById("paintings_container").appendChild(painting);
 
     // name.appendChild(document.createTextNode(names[i]));
     // name.innerHTML = names[i];

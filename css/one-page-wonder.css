@@ -91,32 +91,89 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 h2.heading{
-  margin: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 h3.subheading{
+  margin-top: 10px;
   margin-left: 30px;
+  font-size: 1.5rem;
+}
 
+p.statement{
+  margin-left: 40px;
+  margin-right: 40px;
+  text-justify: inter-word;
+  text-align: justify;
+}
+
+p.i {
+  font-style: italic;
+  margin: 0;
+}
+
+div.paintings_container{
+  text-align: center;
+}
+
+div.frame{
+  /*width: 100%;*/
+  display: block;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .frame {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .frame {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .frame {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .frame {
+    max-width: 1140px;
+  }
 }
 
 img.painting {
   display: block;
   height: auto;
   width: auto;
+  align-items: center;
   max-height: 80vh;
   max-width: 90vw;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .desc{
   width: 100%;
   font-size: 1rem;
+  align-items: center;
   text-align: center !important;
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width:  768px){
@@ -125,12 +182,13 @@ img.painting {
   }
 }
 
-p.i {
-    font-style: italic;
+table{
+  margin-left: 30px;
 }
 
 td{
   padding: 10px;
+  padding-left:0;
 }
 
 .bg-primary {
