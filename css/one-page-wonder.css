@@ -218,19 +218,18 @@ h3.subheading{
   border-left-width: 0;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  /*border-image: linear-gradient(to right, grey, white) 30;*/
   border-color: grey;
 }
 
 @media (min-width: 769px){
   h3.subheading{
-    border-image: linear-gradient(to right, transparent, grey, white) 30;
+    border-image: linear-gradient(to right, transparent, grey, transparent) 30;
   }
 }
 
 @media (max-width: 768px){
   h3.subheading{
-    border-image: linear-gradient(to right, transparent, grey, grey) 30;
+    border-image: linear-gradient(to right, transparent, grey, transparent) 30;
   }
 }
 
