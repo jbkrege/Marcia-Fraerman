@@ -230,8 +230,7 @@ h3.subheading{
 
 @media (max-width: 768px){
   h3.subheading{
-    border-color: grey;
-    border-image: grey;
+    border-image: linear-gradient(to right, transparent, grey, grey) 30;
   }
 }
 
