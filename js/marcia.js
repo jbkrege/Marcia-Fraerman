@@ -98,6 +98,176 @@ all_paintings = {
         "year": "2008",
         "medium": "Acrylic paint on canvas",
         "size": "20 x 20 inches"
+      },
+      {
+        "name": "Hip to Be Square",
+        "img": "./img/hipToBeSquare.jpg",
+        "year": "2009",
+        "medium": "Acrylic paint on canvas",
+        "size": "30 x 40 inches"
+      },
+      {
+        "name": "Fair and Square III",
+        "img": "./img/fairAndSquareIII.jpg",
+        "year": "2009",
+        "medium": "Acrylic paint on canvas",
+        "size": "8 x 24 inches"
+      }
+    ],
+  "drip":
+    [
+      {
+        "name": "Rainy Day Blues",
+        "img": "./img/rainyDayBlues.jpg",
+        "year": "2009",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 24 inches"
+      },
+      {
+        "name": "Clear Vision",
+        "img": "./img/clearVision.jpg",
+        "year": "2010",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 28 inches"
+      },
+      {
+        "name": "A Tangled Web",
+        "img": "./img/aTangledWeb.jpg",
+        "year": "2010",
+        "medium": "Acrylic paint and medium",
+        "size": "24 x 28 inches"
+      },
+    ],
+  "stripe": 
+    [
+      {
+        "name": "Vineyard Sun",
+        "img": "./img/vineyardSun.jpg",
+        "year": "2006",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 36 inches"
+      },
+      {
+        "name": "Show your Stripes",
+        "img": "./img/showYourStripes.jpg",
+        "year": "2005",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Between the Matter",
+        "img": "./img/betweenTheMatter.jpg",
+        "year": "2005",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Infrared",
+        "img": "./img/infrared.jpg",
+        "year": "2004",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 24 inches"
+      },
+      {
+        "name": "In the Pink",
+        "img": "./img/inThePink.jpg",
+        "year": "2004",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 36 inches"
+      },
+      {
+        "name": "Cabo",
+        "img": "./img/cabo.jpg",
+        "year": "2003",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Ode to Barnett",
+        "img": "./img/odeToBarnett.jpg",
+        "year": "2002",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 48 inches"
+      },
+      {
+        "name": "Into the Galaxy",
+        "img": "./img/intoTheGalaxy.jpg",
+        "year": "2002",
+        "medium": "Acrylic paint and medium",
+        "size": "24 x 30 inches"
+      },
+    ],
+  "colorBlock":
+    [
+      {
+        "name": "Black I",
+        "img": "./img/blackI.jpg",
+        "year": "2006",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Black II",
+        "img": "./img/blackII.jpg",
+        "year": "2006",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "So Complementary",
+        "img": "./img/soComplementary.jpg",
+        "year": "2006",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Vail Fall",
+        "img": "./img/vailFall.jpg",
+        "year": "2004",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Winter White I",
+        "img": "./img/winterWhiteI.jpg",
+        "year": "2004",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Red I",
+        "img": "./img/redI.jpg",
+        "year": "2003",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Yellow I",
+        "img": "./img/yellowI.jpg",
+        "year": "2003",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Green I",
+        "img": "./img/greenI.jpg",
+        "year": "2003",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Blue I",
+        "img": "./img/blueI.jpg",
+        "year": "2003",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
+      },
+      {
+        "name": "Caribbean Blues",
+        "img": "./img/caribbeanBlues.jpg",
+        "year": "2003",
+        "medium": "Acrylic paint on canvas",
+        "size": "24 x 30 inches"
       }
     ],
   "justBecause":
@@ -108,6 +278,13 @@ all_paintings = {
         "year": "2018",
         "medium": "Acrylic paint on canvas",
         "size": "24 x 36 inches"
+      },
+      {
+        "name":"Times Square at Night",
+        "img": "./img/timesSquareAtNight.jpg",
+        "year": "2003",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "30 x 40 inches",
       }
     ]
 }
@@ -119,7 +296,7 @@ function camelize(str) {
   }).replace(/\s+/g, '');
 }
 
-var era = ["Color Weave","Just Because"];
+var era = ["Color Weave", "Color Block", "Drip", "Stripe", "Just Because"];
 
 var container = document.getElementById("paintings_container");
 
