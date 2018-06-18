@@ -211,14 +211,28 @@ h2.heading{
 
 h3.subheading{
   margin-top: 10px;
-  margin-left: 30px;
+  padding-left: 30px;
   font-size: 1.5rem;
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-image: linear-gradient(to right, grey, white) 30;
+  /*border-image: linear-gradient(to right, grey, white) 30;*/
+  border-color: grey;
+}
+
+@media (min-width: 769px){
+  h3.subheading{
+    border-image: linear-gradient(to right, transparent, grey, white) 30;
+  }
+}
+
+@media (max-width: 768px){
+  h3.subheading{
+    border-color: grey;
+    border-image: grey;
+  }
 }
 
 p.statement{
