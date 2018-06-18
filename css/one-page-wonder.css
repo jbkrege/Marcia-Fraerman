@@ -157,14 +157,16 @@ a.dropdown-toggle:hover{
   letter-spacing: 0;
 }
 
-/*#statement{
+#statement{
   background-color: #ddd;
   margin: 0;
-}*/
+}
 
 #statement-text {
     /*font-family: Georgia, serif;*/
     position: relative;
+    text-justify: inter-word;
+    text-align: justify;
     font-style: italic;
     margin: 0.5em;
     padding: 0.5em 2em 0.5em 3em;
