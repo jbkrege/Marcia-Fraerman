@@ -1,14 +1,15 @@
 // http://jsfiddle.net/WRgjv/655/
 
-var pad = String(window.innerHeight/2 - (document.getElementById("statement").offsetHeight/2)+5)+"px";
+extra = 20;
+var pad = String(window.innerHeight/2 - (document.getElementById("statement").offsetHeight/2)+extra)+"px";
 document.getElementById("statement").style.paddingTop = pad;
 document.getElementById("statement").style.paddingBottom = pad;
 
-pad = String(window.innerHeight/2 - (document.getElementById("about").offsetHeight/2)+5)+"px";
+pad = String(window.innerHeight/2 - (document.getElementById("about").offsetHeight/2)+extra)+"px";
 document.getElementById("about").style.paddingTop = pad;
 document.getElementById("about").style.paddingBottom = pad;
 
-pad = String(window.innerHeight/2 - (document.getElementById("contact").offsetHeight/2)+5)+"px";
+pad = String(window.innerHeight/2 - (document.getElementById("contact").offsetHeight/2)+extra)+"px";
 document.getElementById("contact").style.paddingTop = pad;
 document.getElementById("contact").style.paddingBottom = pad;
 
@@ -72,34 +73,6 @@ all_paintings = {
         "size": "30 x 40 inches"
       }, 
       {
-        "name": "Dark Night I",
-        "img": "./img/darkNightI.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Dark Night II",
-        "img": "./img/darkNightII.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Dark Night III",
-        "img": "./img/darkNightIII.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Dark Night IV",
-        "img": "./img/darkNightIV.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      },
-      {
         "name": "Hip to Be Square",
         "img": "./img/hipToBeSquare.jpg",
         "year": "2009",
@@ -117,13 +90,6 @@ all_paintings = {
   "drip":
     [
       {
-        "name": "Rainy Day Blues",
-        "img": "./img/rainyDayBlues.jpg",
-        "year": "2009",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 24 inches"
-      },
-      {
         "name": "Clear Vision",
         "img": "./img/clearVision.jpg",
         "year": "2010",
@@ -136,6 +102,13 @@ all_paintings = {
         "year": "2010",
         "medium": "Acrylic paint and medium",
         "size": "24 x 28 inches"
+      },
+      {
+        "name": "Rainy Day Blues",
+        "img": "./img/rainyDayBlues.jpg",
+        "year": "2009",
+        "medium": "Acrylic paint and medium on canvas",
+        "size": "24 x 24 inches"
       },
     ],
   "stripe": 
@@ -199,6 +172,34 @@ all_paintings = {
     ],
   "colorBlock":
     [
+      {
+        "name": "Dark Night I",
+        "img": "./img/darkNightI.jpg",
+        "year": "2008",
+        "medium": "Acrylic paint on canvas",
+        "size": "20 x 20 inches"
+      }, 
+      {
+        "name": "Dark Night II",
+        "img": "./img/darkNightII.jpg",
+        "year": "2008",
+        "medium": "Acrylic paint on canvas",
+        "size": "20 x 20 inches"
+      }, 
+      {
+        "name": "Dark Night III",
+        "img": "./img/darkNightIII.jpg",
+        "year": "2008",
+        "medium": "Acrylic paint on canvas",
+        "size": "20 x 20 inches"
+      }, 
+      {
+        "name": "Dark Night IV",
+        "img": "./img/darkNightIV.jpg",
+        "year": "2008",
+        "medium": "Acrylic paint on canvas",
+        "size": "20 x 20 inches"
+      },
       {
         "name": "Black I",
         "img": "./img/blackI.jpg",
@@ -323,7 +324,12 @@ for (var e = 0, elen = era.length; e < elen; ++e){
 
   // Add subheading
   var subheading = document.createElement("h3");
-  subheading.className = "subheading";
+  if (e != 0){
+    subheading.className = "subheading era";
+  } else {
+    subheading.className = "subheading";
+  }
+  
   subheading.innerHTML = era[e];
   container.appendChild(subheading);
   paintings = all_paintings[camelize(era[e])];
