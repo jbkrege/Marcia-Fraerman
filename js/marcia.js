@@ -94,14 +94,14 @@ all_paintings = {
         "img": "./img/clearVision.jpg",
         "year": "2010",
         "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 28 inches"
+        "size": "24 x 48 inches"
       },
       {
         "name": "A Tangled Web",
         "img": "./img/aTangledWeb.jpg",
         "year": "2010",
         "medium": "Acrylic paint and medium",
-        "size": "24 x 28 inches"
+        "size": "24 x 48 inches"
       },
       {
         "name": "Rainy Day Blues",
