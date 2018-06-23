@@ -122,7 +122,7 @@ all_paintings = {
       },
       {
         "name": "Show Your Stripes",
-        "img": "./img/showYourStripes.jpg",
+        "img": "./img/showyourStripes.jpg",
         "year": "2005",
         "medium": "Acrylic paint on canvas",
         "size": "24 x 30 inches"
