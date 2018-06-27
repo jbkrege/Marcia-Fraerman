@@ -26,8 +26,6 @@
 //   }
 // });
 
-
-
 function camelize(str) {
   return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
     return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
@@ -45,286 +43,275 @@ pad = String(window.innerHeight/2 - (document.getElementById("about").offsetHeig
 document.getElementById("about").style.paddingTop = pad;
 document.getElementById("about").style.paddingBottom = pad;
 
-pad = String(window.innerHeight/2 - (document.getElementById("contact").offsetHeight/2)+extra)+"px";
-pad = pad/1.618;
+pad = String(window.innerHeight/4 - (document.getElementById("contact").offsetHeight/2)+extra)+"px";
 document.getElementById("contact").style.paddingTop = pad;
 document.getElementById("contact").style.paddingBottom = pad;
 
 all_paintings = {
-  "colorWeave": 
-    [ 
-      {
-        "name": "Square One II",
-        "img":  "./img/squareOneII.jpg",
-        "year": "2018",
-        "medium": "Acrylic paint on canvas",
-        "size": "40 x 40 inches"
-      },
-      {
-        "name": "Red Square",
-        "img": "./img/redSquare.jpg",
-        "year": "2018",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      },
-      {
-        "name": "Square Dance",
-        "img": "./img/squareDance.jpg",
-        "year": "2017",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Square Inch",
-        "img": "./img/squareInch.jpg",
-        "year": "2011",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Be There Or Be Square",
-        "img": "./img/beThereOrBeSquare.jpg",
-        "year": "2010",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      }, 
-      {
-        "name": "Square One I",
-        "img": "./img/squareOneI.jpg",
-        "year": "2010",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Fair and Square I",
-        "img": "./img/fairAndSquareI.jpg",
-        "year": "2009",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 24 inches"
-      }, 
-      {
-        "name": "Fair and Square II",
-        "img": "./img/fairAndSquareII.jpg",
-        "year": "2009",
-        "medium": "Acrylic paint on canvas",
-        "size": "30 x 40 inches"
-      }, 
-      {
-        "name": "Hip to Be Square",
-        "img": "./img/hipToBeSquare.jpg",
-        "year": "2009",
-        "medium": "Acrylic paint on canvas",
-        "size": "30 x 40 inches"
-      },
-      {
-        "name": "Fair and Square III",
-        "img": "./img/fairAndSquareIII.jpg",
-        "year": "2009",
-        "medium": "Acrylic paint on canvas",
-        "size": "8 x 24 inches"
-      }
-    ],
-  "drip":
-    [
-      {
-        "name": "Clear Vision",
-        "img": "./img/clearVision.jpg",
-        "year": "2010",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 48 inches"
-      },
-      {
-        "name": "A Tangled Web",
-        "img": "./img/aTangledWeb.jpg",
-        "year": "2010",
-        "medium": "Acrylic paint and medium",
-        "size": "24 x 48 inches"
-      },
-      {
-        "name": "Rainy Day Blues",
-        "img": "./img/rainyDayBlues.jpg",
-        "year": "2009",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 24 inches"
-      },
-    ],
-  "stripe": 
-    [
-      {
-        "name": "Vineyard Sun",
-        "img": "./img/vineyardSun.jpg",
-        "year": "2006",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 36 inches"
-      },
-      {
-        "name": "Show Your Stripes",
-        "img": "./img/showyourStripes.jpg",
-        "year": "2005",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Between the Matter",
-        "img": "./img/betweenTheMatter.jpg",
-        "year": "2005",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Infrared",
-        "img": "./img/infrared.jpg",
-        "year": "2004",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 24 inches"
-      },
-      {
-        "name": "In the Pink",
-        "img": "./img/inThePink.jpg",
-        "year": "2004",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 36 inches"
-      },
-      {
-        "name": "Cabo",
-        "img": "./img/cabo.jpg",
-        "year": "2003",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Ode to Barnett",
-        "img": "./img/odeToBarnett.jpg",
-        "year": "2002",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "24 x 48 inches"
-      },
-      {
-        "name": "Into the Galaxy",
-        "img": "./img/intoTheGalaxy.jpg",
-        "year": "2002",
-        "medium": "Acrylic paint and medium",
-        "size": "24 x 30 inches"
-      },
-    ],
-  "colorBlock":
-    [
-      {
-        "name": "Dark Night I",
-        "img": "./img/darkNightI.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Dark Night II",
-        "img": "./img/darkNightII.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Dark Night III",
-        "img": "./img/darkNightIII.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      }, 
-      {
-        "name": "Dark Night IV",
-        "img": "./img/darkNightIV.jpg",
-        "year": "2008",
-        "medium": "Acrylic paint on canvas",
-        "size": "20 x 20 inches"
-      },
-      {
-        "name": "Black I",
-        "img": "./img/blackI.jpg",
-        "year": "2006",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Black II",
-        "img": "./img/blackII.jpg",
-        "year": "2006",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "So Complementary",
-        "img": "./img/soComplementary.jpg",
-        "year": "2006",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Vail Fall",
-        "img": "./img/vailFall.jpg",
-        "year": "2004",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Winter White I",
-        "img": "./img/winterWhiteI.jpg",
-        "year": "2004",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Red I",
-        "img": "./img/redI.jpg",
-        "year": "2003",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Yellow I",
-        "img": "./img/yellowI.jpg",
-        "year": "2003",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Green I",
-        "img": "./img/greenI.jpg",
-        "year": "2003",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Blue I",
-        "img": "./img/blueI.jpg",
-        "year": "2003",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      },
-      {
-        "name": "Caribbean Blues",
-        "img": "./img/caribbeanBlues.jpg",
-        "year": "2003",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 30 inches"
-      }
-    ],
-  "justBecause":
-    [
-      {
-        "name": "Get Happy",
-        "img": "./img/getHappy.jpg",
-        "year": "2018",
-        "medium": "Acrylic paint on canvas",
-        "size": "24 x 36 inches"
-      },
-      {
-        "name":"Times Square at Night",
-        "img": "./img/timesSquareAtNight.jpg",
-        "year": "2003",
-        "medium": "Acrylic paint and medium on canvas",
-        "size": "30 x 40 inches",
-      }
-    ]
+  "colorWeave": [{
+      "name": "Square One II",
+      "img": "https://image.ibb.co/f8yYpo/square_One_II.jpg" ,
+      "year": "2018",
+      "medium": "Acrylic paint on canvas",
+      "size": "40 x 40 inches"
+    },
+    {
+      "name": "Red Square",
+      "img": "https://image.ibb.co/nD3ipo/red_Square.jpg",
+      "year": "2018",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Square Dance",
+      "img": "https://image.ibb.co/d0ZZvT/square_Dance.jpg" ,
+      "year": "2017",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Square Inch",
+      "img": "https://image.ibb.co/j5mQ28/square_Inch.jpg",
+      "year": "2011",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Be There Or Be Square",
+      "img": "https://image.ibb.co/m9KdN8/be_There_Or_Be_Square.jpg",
+      "year": "2010",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Square One I",
+      "img": "https://image.ibb.co/ctXtpo/square_One_I.jpg",
+      "year": "2010",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Fair and Square I",
+      "img": "https://image.ibb.co/dGYuvT/fair_And_Square_I.jpg",
+      "year": "2009",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 24 inches"
+    },
+    {
+      "name": "Fair and Square II",
+      "img": "https://image.ibb.co/iRyipo/fair_And_Square_II.jpg",
+      "year": "2009",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 40 inches"
+    },
+    {
+      "name": "Hip to Be Square",
+      "img": "https://image.ibb.co/n92yN8/hip_To_Be_Square.jpg",
+      "year": "2009",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 40 inches"
+    },
+    {
+      "name": "Fair and Square III",
+      "img": "https://image.ibb.co/nnM3po/fair_And_Square_III.jpg",
+      "year": "2009",
+      "medium": "Acrylic paint on canvas",
+      "size": "8 x 24 inches"
+    }
+  ],
+  "drip": [{
+      "name": "Clear Vision",
+      "img": "https://image.ibb.co/kqvk28/clear_Vision.jpg",
+      "year": "2010",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "24 x 48 inches"
+    },
+    {
+      "name": "A Tangled Web",
+      "img": "https://image.ibb.co/jzuZvT/a_Tangled_Web.jpg",
+      "year": "2010",
+      "medium": "Acrylic paint and medium",
+      "size": "24 x 48 inches"
+    },
+    {
+      "name": "Rainy Day Blues",
+      "img": "https://image.ibb.co/mJGgaT/rainy_Day_Blues.jpg",
+      "year": "2009",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "24 x 24 inches"
+    }
+  ],
+  "stripe": [{
+      "name": "Vineyard Sun",
+      "img": "https://image.ibb.co/c6tcFT/vineyard_Sun.jpg" ,
+      "year": "2006",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "24 x 36 inches"
+    },
+    {
+      "name": "Show Your Stripes",
+      "img": "https://image.ibb.co/cxJG9o/showyour_Stripes.jpg",
+      "year": "2005",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Between the Matter",
+      "img": "https://image.ibb.co/mDA7FT/between_The_Matter.jpg",
+      "year": "2005",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Infrared",
+      "img": "https://image.ibb.co/iaBQ28/infrared.jpg",
+      "year": "2004",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "24 x 24 inches"
+    },
+    {
+      "name": "In the Pink",
+      "img": "https://image.ibb.co/jkPOpo/in_The_Pink.jpg",
+      "year": "2004",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 36 inches"
+    },
+    {
+      "name": "Cabo",
+      "img": "https://image.ibb.co/kJTipo/cabo.jpg",
+      "year": "2003",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Ode to Barnett",
+      "img": "https://image.ibb.co/kwPdN8/ode_To_Barnett.jpg",
+      "year": "2002",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "24 x 48 inches"
+    },
+    {
+      "name": "Into the Galaxy",
+      "img": "https://image.ibb.co/hqREvT/into_The_Galaxy.jpg",
+      "year": "2002",
+      "medium": "Acrylic paint and medium",
+      "size": "24 x 30 inches"
+    }
+  ],
+  "colorBlock": [{
+      "name": "Dark Night I",
+      "img": "https://image.ibb.co/f2Bsh8/dark_Night_I.jpg",
+      "year": "2008",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Dark Night II",
+      "img": "https://image.ibb.co/dFwgaT/dark_Night_II.jpg",
+      "year": "2008",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Dark Night III",
+      "img": "https://image.ibb.co/iHPpUo/dark_Night_III.jpg",
+      "year": "2008",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Dark Night IV",
+      "img": "https://image.ibb.co/jV0JN8/dark_Night_IV.jpg",
+      "year": "2008",
+      "medium": "Acrylic paint on canvas",
+      "size": "20 x 20 inches"
+    },
+    {
+      "name": "Black I",
+      "img": "https://image.ibb.co/bPjOpo/blackI.jpg",
+      "year": "2006",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Black II",
+      "img": "https://image.ibb.co/kqq7FT/blackII.jpg",
+      "year": "2006",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "So Complementary",
+      "img": "https://image.ibb.co/eup1aT/so_Complementary.jpg" ,
+      "year": "2006",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Vail Fall",
+      "img": "https://image.ibb.co/bZETN8/vailFall.jpg",
+      "year": "2004",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Winter White I",
+      "img": "https://image.ibb.co/fCq2h8/winter_White_I.jpg" ,
+      "year": "2004",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Red I",
+      "img": "https://image.ibb.co/fq41aT/redI.jpg",
+      "year": "2003",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Yellow I",
+      "img": "https://image.ibb.co/gbkDpo/yellowI.jpg",
+      "year": "2003",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Green I",
+      "img": "https://image.ibb.co/bve1aT/greenI.jpg",
+      "year": "2003",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Blue I",
+      "img": "https://image.ibb.co/n2Y528/blueI.jpg",
+      "year": "2003",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    },
+    {
+      "name": "Caribbean Blues",
+      "img": "https://image.ibb.co/fv9ZvT/caribbean_Blues.jpg" ,
+      "year": "2003",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 30 inches"
+    }
+  ],
+  "justBecause": [{
+      "name": "Get Happy",
+      "img": "https://image.ibb.co/kaU1aT/getHappy.jpg",
+      "year": "2018",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 36 inches"
+    },
+    {
+      "name": "Times Square at Night",
+      "img": "https://image.ibb.co/hDyYpo/times_Square_At_Night.jpg",
+      "year": "2003",
+      "medium": "Acrylic paint and medium on canvas",
+      "size": "30 x 40 inches"
+    }
+  ]
 }
 
 var era = ["Color Weave", "Color Block", "Drip", "Stripe", "Just Because"];
@@ -358,6 +345,7 @@ for (var e = 0, elen = era.length; e < elen; ++e){
     subheading.className = "subheading era";
   } else {
     subheading.className = "subheading";
+    subheading.style.marginTop = "10px";
   }
   
   subheading.innerHTML = era[e];
@@ -380,14 +368,13 @@ for (var e = 0, elen = era.length; e < elen; ++e){
 
       var desc = document.createElement("div");
       desc.className = "desc";
-
+      // desc.id = "desc_"+String(i);
       var title = document.createElement("div");
       var text = document.createElement("p");
       text.className = "i";
       text.innerHTML = paintings[i]["name"];
       title.appendChild(text);
       desc.appendChild(title);
-
       var rest = document.createElement("div");
       rest.innerHTML = ", "+paintings[i]["year"]+", "+paintings[i]["medium"]+", "+paintings[i]["size"];
       desc.appendChild(rest);
@@ -397,35 +384,3 @@ for (var e = 0, elen = era.length; e < elen; ++e){
       container.appendChild(painting);
   }
 }
-
-// https://coderwall.com/p/_8jxgw/autoresize-text-to-fit-into-a-div-width-height
-var autoSizeText;
-autoSizeText = function() {
-  var el, elements, _i, _len, _results;
-  elements = $('.desc');
-  console.log(elements);
-  if (elements.length < 0) {
-    return;
-  }
-  _results = [];
-  for (_i = 0, _len = elements.length; _i < _len; _i++) {
-    el = elements[_i];
-    _results.push((function(el) {
-      var resizeText, _results1;
-      resizeText = function() {
-        var elNewFontSize;
-        elNewFontSize = (parseInt($(el).css('font-size').slice(0, -2)) - 1) + 'px';
-        return $(el).css('font-size', elNewFontSize);
-      };
-      _results1 = [];
-      while (el.scrollHeight > el.offsetHeight) {
-        _results1.push(resizeText());
-      }
-      return _results1;
-    })(el));
-  }
-  return _results;
-};
-
-autoSizeText()
-
