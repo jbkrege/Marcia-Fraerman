@@ -20,7 +20,7 @@ function _getMaxChildHeight(elem){
 
 function resizeText(){
   elements = document.getElementsByClassName("desc");
-  height = elements[0].childNodes[0].offsetHeight; // Warning: assumes first element has correct height
+  height = window.getComputedStyle(elements[0], null).getPropertyValue('font-size').slice(0,-2);
   for (var i = 0, len = elements.length; i < len; i++){
     while (_getMaxChildHeight(elements[i]) > height){
       var fontsize = window.getComputedStyle(elements[i], null).getPropertyValue('font-size');

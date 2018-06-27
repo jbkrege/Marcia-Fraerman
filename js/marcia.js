@@ -346,6 +346,7 @@ for (var e = 0, elen = era.length; e < elen; ++e){
   } else {
     subheading.className = "subheading";
     subheading.style.marginTop = "10px";
+    subheading.style.marginBottom = "-4vh";
   }
   
   subheading.innerHTML = era[e];
