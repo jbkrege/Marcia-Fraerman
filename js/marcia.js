@@ -1,3 +1,39 @@
+// public static class Post {
+
+//   public String author;
+//   public String title;
+
+//   public Post(String author, String title) {
+//     // ...
+//   }
+
+// }
+
+// // Get a reference to our posts
+// final FirebaseDatabase database = FirebaseDatabase.getInstance();
+// DatabaseReference ref = database.getReference();
+
+
+// ref.addListenerForSingleValueEvent(new ValueEventListener() {
+//   @Override
+//   public void onDataChange(DataSnapshot dataSnapshot) {
+//     // ...
+//   }
+
+//   @Override
+//   public void onCancelled(DatabaseError databaseError) {
+//     // ...
+//   }
+// });
+
+
+
+function camelize(str) {
+  return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
+    return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
+  }).replace(/\s+/g, '');
+}
+
 // http://jsfiddle.net/WRgjv/655/
 
 extra = 20;
@@ -10,6 +46,7 @@ document.getElementById("about").style.paddingTop = pad;
 document.getElementById("about").style.paddingBottom = pad;
 
 pad = String(window.innerHeight/2 - (document.getElementById("contact").offsetHeight/2)+extra)+"px";
+pad = pad/1.618;
 document.getElementById("contact").style.paddingTop = pad;
 document.getElementById("contact").style.paddingBottom = pad;
 
@@ -290,13 +327,6 @@ all_paintings = {
     ]
 }
 
-
-function camelize(str) {
-  return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
-    return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
-  }).replace(/\s+/g, '');
-}
-
 var era = ["Color Weave", "Color Block", "Drip", "Stripe", "Just Because"];
 
 var container = document.getElementById("paintings_container");
@@ -368,6 +398,7 @@ for (var e = 0, elen = era.length; e < elen; ++e){
   }
 }
 
+// https://coderwall.com/p/_8jxgw/autoresize-text-to-fit-into-a-div-width-height
 var autoSizeText;
 autoSizeText = function() {
   var el, elements, _i, _len, _results;
@@ -395,4 +426,6 @@ autoSizeText = function() {
   }
   return _results;
 };
+
+autoSizeText()
 

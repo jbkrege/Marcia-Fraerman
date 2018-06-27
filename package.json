@@ -26,8 +26,12 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git"
     },
     "dependencies": {
-        "bootstrap": "4.1.1",
+        "bootstrap": "^3.3.7",
+        "firebase": "^5.1.0",
+        "firebase-admin": "^5.12.1",
+        "grunt-cli": "^1.2.0",
         "jquery": "3.3.1",
+        "npm": "^6.1.0",
         "require": "^2.4.20"
     },
     "devDependencies": {
