@@ -43,6 +43,10 @@ pad = String(window.innerHeight/2 - (document.getElementById("about").offsetHeig
 document.getElementById("about").style.paddingTop = pad;
 document.getElementById("about").style.paddingBottom = pad;
 
+pad = String(window.innerHeight/2 - (document.getElementById("press").offsetHeight/2)+extra)+"px";
+document.getElementById("press").style.paddingTop = pad;
+document.getElementById("press").style.paddingBottom = pad;
+
 pad = String(window.innerHeight/4 - (document.getElementById("contact").offsetHeight/2)+extra)+"px";
 document.getElementById("contact").style.paddingTop = pad;
 document.getElementById("contact").style.paddingBottom = pad;
