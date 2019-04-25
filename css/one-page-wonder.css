@@ -56,7 +56,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background-image: url('../img/darkNightI.jpg');
+  background-image: url("https://image.ibb.co/bPjOpo/blackI.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -131,8 +131,6 @@ rounded-circle{
   }
 }
 
-
-
 .dropdown-menu{
   background-color: rgba(0, 0, 0, .7);
   color: rgba(255, 255, 255, .5);
@@ -160,9 +158,62 @@ a.dropdown-toggle:hover{
   letter-spacing: 0;
 }
 
+/*  display: flex;
+  align-items: left;
+}
+
+td{
+*/
+
 #statement{
-  background-color: #ddd;
+  background-color: #eee;
   margin: 10vh 0 0 0;
+}
+
+#about{
+  margin: 0;
+  background-color: #ddd;
+}
+
+#press{
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #ccc;
+}
+
+.press-line {
+  padding: 0 0 10px 2em;
+  text-indent: -2em;
+  margin: 0;
+  color: black;
+  text-shadow: 0 .5px 0 white;
+}
+
+
+
+.press-link {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.2);;
+}
+
+.press-link:hover { 
+  color: black;
+  text-decoration:none;
+  text-shadow: 0 1px 3px white;
+  cursor: pointer
+}
+
+
+#press-container{
+  padding-left: 30px;
+}
+
+#contact{
+  margin: 0;
+  background-color: #222;
+  color: white;
 }
 
 #statement-text {
@@ -180,6 +231,15 @@ a.dropdown-toggle:hover{
 #statement-creds{
   padding-left: 2em;
   font-size: .8rem;
+}
+
+p.statement{
+  /*margin-top: 40%;
+  /*padding-bottom: 20%;*/
+  /*padding-left: 40px;
+  padding-right: 40px;*/
+  text-justify: inter-word;
+  text-align: justify;
 }
 
 
@@ -203,17 +263,6 @@ a.dropdown-toggle:hover{
     bottom:-0.5em;
     content: "\201D";
 }*/
-
-#about{
-  margin: 0;
-  background-color: #ccc;
-}
-
-#contact{
-  margin: 0;
-  background-color: #222;
-  color: white;
-}
 
 h2.heading{
   margin-left: 20px;
@@ -239,23 +288,14 @@ h3.era{
 
 @media (min-width: 769px){
   h3.subheading{
-    border-image: linear-gradient(to right, transparent, grey, transparent) 30;
+    border-image: linear-gradient(to right, transparent, rgba(0,0,0,.1), transparent) 30;
   }
 }
 
 @media (max-width: 768px){
   h3.subheading{
-    border-image: linear-gradient(to right, transparent, grey, transparent) 30;
+    border-image: linear-gradient(to right, transparent, rgba(0,0,0,.1), transparent) 30;
   }
-}
-
-p.statement{
-  /*margin-top: 40%;
-  /*padding-bottom: 20%;*/
-  /*padding-left: 40px;
-  padding-right: 40px;*/
-  text-justify: inter-word;
-  text-align: justify;
 }
 
 p.i {

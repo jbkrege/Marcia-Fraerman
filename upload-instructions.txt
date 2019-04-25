@@ -1,0 +1,19 @@
+1) Upload to imgbb
+2) Navigate to imgbb site for that painting
+3) Right click image of painting and click "Copy Image Address"
+4) Copy and paste a painting object in marcia.js
+    i.e.:
+    {
+      "name": "Square One II",
+      "img": "https://image.ibb.co/f8yYpo/square_One_II.jpg" ,
+      "year": "2018",
+      "medium": "Acrylic paint on canvas",
+      "size": "40 x 40 inches"
+    },
+    note: - commas are necessary between each line/item, including the trailing comma
+          - Make sure the new painting is in the correct catagory (i.e. "colorWeave")
+
+5) Fill in values with correct info for the new painting
+    note: - Be sure to use the correct image url. It should look like the example above.
+6) Double click "upload-helper"
+7) Feel free to email Ben at jbkrege@gmail.com if you run into any problems :) 
