@@ -1,7 +1,7 @@
-1) Upload to imgbb
+1) Upload image of new painting to imgbb.com
 2) Navigate to imgbb site for that painting
 3) Right click image of painting and click "Copy Image Address"
-4) Copy and paste a painting object in marcia.js
+4) Click on Finder application in the bottom tool bar. Go to Documents -> Website -> Marcia-Fraerman -> Website -> js. Double click marcia.js. This will open Sublime, which is a text editor. Copy ( cmd + c ) and paste ( cmd + v ) a painting object in marcia.js. A painting object is enclosed by braces like these: { painting_object } 
     i.e.:
     {
       "name": "Square One II",
@@ -15,9 +15,10 @@
 
 5) Fill in values with correct info for the new painting
     note: - Be sure to use the correct image url. It should look like the example above.
-6) Double click "upload-checker" and verify correctness
+6) Back in Finder, double click "upload-checker" and verify correctness
  -  As outputted in the terminal, you should navigate to http://localhost:5000 in your browser
-6) Double click "upload-helper"
+ -  After checking, feel free to exit out of the terminal window (the white box with a bunch of arcane text)
+7) Double click "upload-helper"
  - Answering "y" will upload to the web server. Whatever you upload will be your website.
  - Answering "n" to the prompt will delete your changes to marcia.js and go back to last working version. If you mess up, you can always just run upload-helper, press "n" to remove the bad changes, run upload-helper again, and answer "y" to restore the previous website.
-7) Feel free to email Ben at jbkrege@gmail.com if you run into any problems :) 
+8) Feel free to email Ben at jbkrege@gmail.com if you run into any problems :) 
