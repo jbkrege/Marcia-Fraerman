@@ -1,8 +1,5 @@
-1) Click on Finder application in the bottom tool bar. Go to Documents -> Website -> Marcia-Fraerman. Double click upload1-git.sh
-2) Upload image of new painting to imgbb.com
-3) Navigate to imgbb site for that painting
-4) Right click image of painting and click "Copy Image Address"
-5) Go back to Finder. Navigate to the js folder (Documents/Website/Marcia-Fraerman/js). Double click marcia.js. This will open Sublime, which is a text editor. Copy ( cmd + c ) and paste ( cmd + v ) a painting object in marcia.js. A painting object is enclosed by braces like these: { painting_object } 
+1) Click on Finder application at the far left of the bottom tool bar. Go to Documents -> Website -> Marcia-Fraerman. Double click upload1-git.sh. Enter git credentials if necessary. Feel free to exit out of the terminal window (the white box with a bunch of arcane text) after [Process completed] appears.
+2) Go back to Finder. Navigate to the js folder (Documents/Website/Marcia-Fraerman/js). Double click marcia.js. This will open Sublime, which is a text editor. Copy ( cmd + c ) and paste ( cmd + v ) a painting object in marcia.js. A painting object is enclosed by braces like these: { painting_object } Make sure you include these braces.
     i.e.:
     {
       "name": "Square One II",
@@ -13,9 +10,11 @@
     },
     note: - commas are necessary between each line/item, including the trailing comma
           - Make sure the new painting is in the correct catagory (i.e. "colorWeave")
-
+3) Upload image of new painting to imgbb.com
+4) Navigate to imgbb site for that painting
+5) Right click image of painting and click "Copy Image Address"
 6) Fill in values with correct info for the new painting
-    note: - Be sure to use the correct image url. It should look like the example above.
+    note: - Be sure to use the correct image url in the "img" line. It should look like the example above, but with whatever your picture file was.
 7) Back in Finder, double click "upload-checker" and verify correctness
  -  As outputted in the terminal, you should navigate to http://localhost:5000 in your browser
  -  After checking, feel free to exit out of the terminal window (the white box with a bunch of arcane text)
