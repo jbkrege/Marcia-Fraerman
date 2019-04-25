@@ -303,7 +303,7 @@ all_paintings = {
   ],
   "justBecause": [{
       "name": "Get Happy",
-      "img": "https://image.ibb.co/kaU1aT/getHappy.jpg",
+      "img": "https://i.ibb.co/KxcXRTb/get-Happy-800w.jpg",
       "year": "2018",
       "medium": "Acrylic paint on canvas",
       "size": "24 x 36 inches"
