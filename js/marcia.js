@@ -53,7 +53,8 @@ document.getElementById("contact").style.paddingTop = pad;
 document.getElementById("contact").style.paddingBottom = pad;
 
 all_paintings = {
-  "colorWeave": [{
+  "colorWeave": [
+    {
       "name": "Square One II",
       "img": "https://image.ibb.co/f8yYpo/square_One_II.jpg" ,
       "year": "2018",
