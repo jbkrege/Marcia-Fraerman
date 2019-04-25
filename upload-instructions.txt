@@ -15,5 +15,9 @@
 
 5) Fill in values with correct info for the new painting
     note: - Be sure to use the correct image url. It should look like the example above.
+6) Double click "upload-checker" and verify correctness
+ -  As outputted in the terminal, you should navigate to http://localhost:5000 in your browser
 6) Double click "upload-helper"
+ - Answering "y" will upload to the web server. Whatever you upload will be your website.
+ - Answering "n" to the prompt will delete your changes to marcia.js and go back to last working version. If you mess up, you can always just run upload-helper, press "n" to remove the bad changes, run upload-helper again, and answer "y" to restore the previous website.
 7) Feel free to email Ben at jbkrege@gmail.com if you run into any problems :) 
