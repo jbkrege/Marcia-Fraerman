@@ -55,13 +55,6 @@ document.getElementById("contact").style.paddingBottom = pad;
 all_paintings = {
   "colorWeave": [
     {
-      "name": "Square Four",
-      "img": "https://i.ibb.co/WWH0tGW/boardwalk-fern-portrate.jpg" ,
-      "year": "2019",
-      "medium": "Acrylic paint on board",
-      "size": "48 x 48 inches"
-    },
-    {
       "name": "Square One II",
       "img": "https://image.ibb.co/f8yYpo/square_One_II.jpg" ,
       "year": "2018",
