@@ -55,11 +55,11 @@ document.getElementById("contact").style.paddingBottom = pad;
 all_paintings = {
   "colorWeave": [
     {
-      "name": "Haymarket Square",
-      "img": "https://i.ibb.co/85Tp9ss/MF-7469email.jpg" ,
+      "name": "Square Up II",
+      "img": "https://i.ibb.co/zFMMqvJ/MF-7473email.jpg" ,
       "year": "2022",
       "medium": "Acrylic paint on canvas",
-      "size": "30 x 30 inches"
+      "size": "24 x 24 inches"
     },
     {
       "name": "Square Inch II",
@@ -69,11 +69,11 @@ all_paintings = {
       "size": "24 x 24 inches"
     },
     {
-      "name": "Square Up II",
-      "img": "https://i.ibb.co/zFMMqvJ/MF-7473email.jpg" ,
+      "name": "Haymarket Square",
+      "img": "https://i.ibb.co/85Tp9ss/MF-7469email.jpg" ,
       "year": "2022",
       "medium": "Acrylic paint on canvas",
-      "size": "24 x 24 inches"
+      "size": "30 x 30 inches"
     },
     {
       "name": "Square Up",
@@ -322,8 +322,8 @@ all_paintings = {
       "name": "Hazy Weekend @ Rough Draft Brewing, San Diego",
       "img": "https://i.ibb.co/W2KCFq0/MF-7476email.jpg",
       "year": "2020",
-      "medium": "Ink on paper on can",
-      "size": "16 oz (473 ml)"
+      "medium": "",
+      "size": ""
     }
   ]
 }
@@ -387,7 +387,12 @@ for (var e = 0, elen = era.length; e < elen; ++e){
       title.appendChild(text);
       desc.appendChild(title);
       var rest = document.createElement("div");
-      rest.innerHTML = ", "+paintings[i]["year"]+", "+paintings[i]["medium"]+", "+paintings[i]["size"];
+      if (paintings[i]["year"])
+        rest.innerHTML = ", "+paintings[i]["year"]
+      if (paintings[i]["medium"])
+        rest.innerHTML = rest.innerHTML+", "+paintings[i]["medium"]
+      if (paintings[i]["size"])
+        rest.innerHTML = rest.innerHTML+", "+paintings[i]["size"];
       desc.appendChild(rest);
 
       painting.appendChild(desc);
