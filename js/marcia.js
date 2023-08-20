@@ -70,7 +70,7 @@ all_paintings = {
     },
     {
       "name": "Square Up II",
-      "img": "https://i.ibb.co/k0MjJyH/MF-7472email.jpg" ,
+      "img": "https://i.ibb.co/zFMMqvJ/MF-7473email.jpg" ,
       "year": "2022",
       "medium": "Acrylic paint on canvas",
       "size": "24 x 24 inches"
@@ -364,7 +364,7 @@ for (var e = 0, elen = era.length; e < elen; ++e){
   paintings = all_paintings[camelize(era[e])];
 
   // Add paintings to dom
-  for (var i = 0, len = paintings.length; i < len; ++i) {
+  for (var i = 0, len = paintings.length; i < len; i++) {
 
       var painting = document.createElement("div");
       painting.className = "frame";
