@@ -305,18 +305,18 @@ all_paintings = {
   ],
   "more": [
     {
-      "name": "Get Happier",
-      "img": "https://i.ibb.co/8sYYLjw/MF-7468email.jpg",
-      "year": "2021",
-      "medium": "Acrylic paint on canvas",
-      "size": "30 x 24 inches"
-    },
-    {
       "name": "Get Happy",
       "img": "https://i.ibb.co/KxcXRTb/get-Happy-800w.jpg",
       "year": "2020",
       "medium": "Acrylic paint on canvas",
       "size": "24 x 36 inches"
+    },
+    {
+      "name": "Get Happier",
+      "img": "https://i.ibb.co/8sYYLjw/MF-7468email.jpg",
+      "year": "2021",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 24 inches"
     },
     {
       "name": "Hazy Weekend @ Rough Draft Brewing, San Diego",
