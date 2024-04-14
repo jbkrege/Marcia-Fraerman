@@ -67,7 +67,7 @@ all_paintings = {
       "img": "https://i.ibb.co/wWCyYXZ/MF-9981email.jpg" ,
       "year": "2024",
       "medium": "Acrylic paint on canvas",
-      "size": "24 x 26 inches"
+      "size": "24 x 36 inches"
     },
     {
       "name": "Square Inch II",
