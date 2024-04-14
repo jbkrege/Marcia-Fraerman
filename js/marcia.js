@@ -54,16 +54,31 @@ document.getElementById("contact").style.paddingBottom = pad;
 
 all_paintings = {
   "colorWeave": [
+
     {
-      "name": "Square Up II",
-      "img": "https://i.ibb.co/zFMMqvJ/MF-7473email.jpg" ,
-      "year": "2022",
+      "name": "Shirtley's Light",
+      "img": "https://i.ibb.co/55TC6QF/MF-9982email.jpg" ,
+      "year": "2024",
       "medium": "Acrylic paint on canvas",
       "size": "24 x 24 inches"
     },
     {
+      "name": "Off the Grid",
+      "img": "https://i.ibb.co/wWCyYXZ/MF-9981email.jpg" ,
+      "year": "2024",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 26 inches"
+    },
+    {
       "name": "Square Inch II",
       "img": "https://i.ibb.co/k0MjJyH/MF-7472email.jpg" ,
+      "year": "2023",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 24 inches"
+    },
+    {
+      "name": "Square Up II",
+      "img": "https://i.ibb.co/zFMMqvJ/MF-7473email.jpg" ,
       "year": "2022",
       "medium": "Acrylic paint on canvas",
       "size": "24 x 24 inches"
@@ -143,14 +158,14 @@ all_paintings = {
       "img": "https://image.ibb.co/iRyipo/fair_And_Square_II.jpg",
       "year": "2009",
       "medium": "Acrylic paint on canvas",
-      "size": "30 x 40 inches"
+      "size": "36 x 48 inches"
     },
     {
       "name": "Hip to Be Square",
       "img": "https://image.ibb.co/n92yN8/hip_To_Be_Square.jpg",
       "year": "2009",
       "medium": "Acrylic paint on canvas",
-      "size": "30 x 40 inches"
+      "size": "36 x 48 inches"
     },
     {
       "name": "Fair and Square III",
