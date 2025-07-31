@@ -55,6 +55,76 @@ document.getElementById("contact").style.paddingBottom = pad;
 all_paintings = {
   "colorWeave": [
     {
+      "name": "Bleeding Hearts",
+      "img": "https://i.ibb.co/1GSJkYfZ/bleeding-hearts.jpg" ,
+      "year": "2025",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 30 inches"
+    },
+    {
+      "name": "Out of the Fog",
+      "img": "https://i.ibb.co/GQd4TzTS/fog2.jpg" ,
+      "year": "2025",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 40 inches"
+    },
+    {
+      "name": "Gold Rush",
+      "img": "https://i.ibb.co/QvVVCDvN/gold-rush.jpg",
+      "year": "2024",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 24 inches"
+    },
+    {
+      "name": "Shirtley's Light",
+      "img": "https://i.ibb.co/55TC6QF/MF-9982email.jpg" ,
+      "year": "2024",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 24 inches"
+    },
+    {
+      "name": "Off the Grid",
+      "img": "https://i.ibb.co/wWCyYXZ/MF-9981email.jpg" ,
+      "year": "2024",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 36 inches"
+    },
+    {
+      "name": "Square Inch II",
+      "img": "https://i.ibb.co/k0MjJyH/MF-7472email.jpg" ,
+      "year": "2023",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 24 inches"
+    },
+    {
+      "name": "Square Up II",
+      "img": "https://i.ibb.co/zFMMqvJ/MF-7473email.jpg" ,
+      "year": "2022",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 24 inches"
+    },
+    {
+      "name": "Haymarket Square",
+      "img": "https://i.ibb.co/85Tp9ss/MF-7469email.jpg" ,
+      "year": "2022",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 30 inches"
+    },
+    {
+      "name": "Square Up",
+      "img": "https://i.ibb.co/M2QRr99/MF-7464email.jpg" ,
+      "year": "2020",
+      "medium": "Acrylic paint on canvas",
+      "size": "40 x 40 inches"
+    },
+    {
+      "name": "Square Deal",
+      "img": "https://i.ibb.co/5YxhnB8/MF-7465email.jpg" ,
+      "year": "2020",
+      "medium": "Acrylic paint on canvas",
+      "size": "40 x 40 inches"
+    },
+    {
       "name": "Square One II",
       "img": "https://image.ibb.co/f8yYpo/square_One_II.jpg" ,
       "year": "2018",
@@ -108,14 +178,14 @@ all_paintings = {
       "img": "https://image.ibb.co/iRyipo/fair_And_Square_II.jpg",
       "year": "2009",
       "medium": "Acrylic paint on canvas",
-      "size": "30 x 40 inches"
+      "size": "36 x 48 inches"
     },
     {
       "name": "Hip to Be Square",
       "img": "https://image.ibb.co/n92yN8/hip_To_Be_Square.jpg",
       "year": "2009",
       "medium": "Acrylic paint on canvas",
-      "size": "30 x 40 inches"
+      "size": "36 x 48 inches"
     },
     {
       "name": "Fair and Square III",
@@ -125,7 +195,31 @@ all_paintings = {
       "size": "8 x 24 inches"
     }
   ],
-  "drip": [{
+  "colorRiot": [
+    {
+      "name": "Get Happy",
+      "img": "https://i.ibb.co/KxcXRTb/get-Happy-800w.jpg",
+      "year": "2020",
+      "medium": "Acrylic paint on canvas",
+      "size": "24 x 36 inches"
+    },
+    {
+      "name": "Get Happier",
+      "img": "https://i.ibb.co/8sYYLjw/MF-7468email.jpg",
+      "year": "2021",
+      "medium": "Acrylic paint on canvas",
+      "size": "30 x 24 inches"
+    },
+    {
+      "name": "Hazy Weekend @ Rough Draft Brewing, San Diego",
+      "img": "https://i.ibb.co/W2KCFq0/MF-7476email.jpg",
+      "year": "2020",
+      "medium": "",
+      "size": ""
+    }
+  ],
+  "drip": [
+    {
       "name": "Clear Vision",
       "img": "https://image.ibb.co/kqvk28/clear_Vision.jpg",
       "year": "2010",
@@ -147,7 +241,8 @@ all_paintings = {
       "size": "24 x 24 inches"
     }
   ],
-  "stripe": [{
+  "stripe": [
+    {
       "name": "Vineyard Sun",
       "img": "https://image.ibb.co/c6tcFT/vineyard_Sun.jpg" ,
       "year": "2006",
@@ -169,13 +264,6 @@ all_paintings = {
       "size": "24 x 30 inches"
     },
     {
-      "name": "Infrared",
-      "img": "https://image.ibb.co/iaBQ28/infrared.jpg",
-      "year": "2004",
-      "medium": "Acrylic paint and medium on canvas",
-      "size": "24 x 24 inches"
-    },
-    {
       "name": "In the Pink",
       "img": "https://image.ibb.co/jkPOpo/in_The_Pink.jpg",
       "year": "2004",
@@ -195,16 +283,10 @@ all_paintings = {
       "year": "2002",
       "medium": "Acrylic paint and medium on canvas",
       "size": "24 x 48 inches"
-    },
-    {
-      "name": "Into the Galaxy",
-      "img": "https://image.ibb.co/hqREvT/into_The_Galaxy.jpg",
-      "year": "2002",
-      "medium": "Acrylic paint and medium",
-      "size": "24 x 30 inches"
     }
   ],
-  "colorBlock": [{
+  "colorBlock": [
+    {
       "name": "Dark Night I",
       "img": "https://image.ibb.co/f2Bsh8/dark_Night_I.jpg",
       "year": "2008",
@@ -254,20 +336,6 @@ all_paintings = {
       "size": "24 x 30 inches"
     },
     {
-      "name": "Vail Fall",
-      "img": "https://image.ibb.co/bZETN8/vailFall.jpg",
-      "year": "2004",
-      "medium": "Acrylic paint on canvas",
-      "size": "24 x 30 inches"
-    },
-    {
-      "name": "Winter White I",
-      "img": "https://image.ibb.co/fCq2h8/winter_White_I.jpg" ,
-      "year": "2004",
-      "medium": "Acrylic paint on canvas",
-      "size": "24 x 30 inches"
-    },
-    {
       "name": "Red I",
       "img": "https://image.ibb.co/fq41aT/redI.jpg",
       "year": "2003",
@@ -277,13 +345,6 @@ all_paintings = {
     {
       "name": "Yellow I",
       "img": "https://image.ibb.co/gbkDpo/yellowI.jpg",
-      "year": "2003",
-      "medium": "Acrylic paint on canvas",
-      "size": "24 x 30 inches"
-    },
-    {
-      "name": "Green I",
-      "img": "https://image.ibb.co/bve1aT/greenI.jpg",
       "year": "2003",
       "medium": "Acrylic paint on canvas",
       "size": "24 x 30 inches"
@@ -302,31 +363,12 @@ all_paintings = {
       "medium": "Acrylic paint on canvas",
       "size": "24 x 30 inches"
     }
-  ],
-  "justBecause": [{
-      "name": "Get Happy",
-      "img": "https://i.ibb.co/KxcXRTb/get-Happy-800w.jpg",
-      "year": "2018",
-      "medium": "Acrylic paint on canvas",
-      "size": "24 x 36 inches"
-    },
-    {
-      "name": "Times Square at Night",
-      "img": "https://image.ibb.co/hDyYpo/times_Square_At_Night.jpg",
-      "year": "2003",
-      "medium": "Acrylic paint and medium on canvas",
-      "size": "30 x 40 inches"
-    }
   ]
 }
 
-var era = ["Color Weave", "Color Block", "Drip", "Stripe", "Just Because"];
+var era = ["Color Weave", "Color Riot","Color Block", "Drip", "Stripe"];
 
 var container = document.getElementById("paintings_container");
-
-// <li class = "nav-item"><a class="nav-link">x</a></li>
-// <li class = "nav-item"><a class="nav-link">y</a></li>
-// <li class = "nav-item"><a class="nav-link">z</a></li>
 
 for (var e = 0, elen = era.length; e < elen; ++e){
   // Add era to dropdown menu
@@ -360,7 +402,7 @@ for (var e = 0, elen = era.length; e < elen; ++e){
   paintings = all_paintings[camelize(era[e])];
 
   // Add paintings to dom
-  for (var i = 0, len = paintings.length; i < len; ++i) {
+  for (var i = 0, len = paintings.length; i < len; i++) {
 
       var painting = document.createElement("div");
       painting.className = "frame";
@@ -383,7 +425,12 @@ for (var e = 0, elen = era.length; e < elen; ++e){
       title.appendChild(text);
       desc.appendChild(title);
       var rest = document.createElement("div");
-      rest.innerHTML = ", "+paintings[i]["year"]+", "+paintings[i]["medium"]+", "+paintings[i]["size"];
+      if (paintings[i]["year"])
+        rest.innerHTML = ", "+paintings[i]["year"]
+      if (paintings[i]["medium"])
+        rest.innerHTML = rest.innerHTML+", "+paintings[i]["medium"]
+      if (paintings[i]["size"])
+        rest.innerHTML = rest.innerHTML+", "+paintings[i]["size"];
       desc.appendChild(rest);
 
       painting.appendChild(desc);
